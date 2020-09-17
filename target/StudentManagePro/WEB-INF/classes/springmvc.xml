@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 配置视图解析器 -->
+    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- 过滤静态资源 -->
+    <mvc:default-servlet-handler />
+    <mvc:resources mapping="/img/**" location="/img/" />
+    <mvc:resources mapping="/css/**" location="/css/" />
+    <mvc:resources mapping="/js/**" location="/js/" />
+<!--    <mvc:resources mapping="/lib/**" location="/lib/" />-->
+<!--    <mvc:resources mapping="/api/**" location="/api/" />-->
+
+    <!-- SpringMVC 基础配置 -->
+    <mvc:annotation-driven />
+
+    <!-- 将控制器所在包 加入 IOC 容器 开启注解扫描 -->
+    <context:component-scan base-package="pers.kuroko.controller" />
+
+</beans>

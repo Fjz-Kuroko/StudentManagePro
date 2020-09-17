@@ -1,0 +1,122 @@
+#add     /*新增*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: white;
+    border: 1px solid black;
+}
+#del     /*删除*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #d9534f;
+    color: white;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+#previous     /*上一页*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: white;
+    border: 1px solid black;
+    float: right;
+}
+#next     /*下一页*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #d9534f;
+    color: white;
+    border: 1px solid black;
+    margin-left: 5px;
+    float: right;
+}
+#examine     /*查看*/
+{
+    font-size: 16px;
+    height: 20px;
+    border: none;
+    color: red;
+    background: none;
+    /*background-color: #eef1f8;*/
+}
+#update     /*修改*/
+{
+    font-size: 16px;
+    height: 20px;
+    border: none;
+    color: red;
+    background: none;
+    /*background-color: #eef1f8;*/
+}
+#delete     /* 删除 */
+{
+    font-size: 16px;
+    height: 20px;
+    border: none;
+    color: red;
+    background: none;
+}
+#submit     /*提交*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: black;
+    border: 1px solid #dadee1;
+}
+#addCancel     /*新增中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    margin-left: 5px;
+}
+#preservation     /*保存*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: black;
+    border: 1px solid #dadee1;
+}
+#updateCancel     /*修改中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    margin-left: 5px;
+}
+#examineCancel     /*修改中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    /*margin-left: 5px;*/
+}
+#confirm     /*确认*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: black;
+    border: 1px solid #dadee1;
+}
+#delCancel     /*删除中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    margin-left: 5px;
+}

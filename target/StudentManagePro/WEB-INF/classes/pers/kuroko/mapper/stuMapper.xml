@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：该mapper.xml映射文件的唯一标识 -->
+<mapper namespace="pers.kuroko.mapper.StuMapper">
+    <select id="queryStudentById" parameterType="int" resultType="Student">
+        select * from student where id = #{id}
+    </select>
+<!--    <insert id="addStu" parameterType="Stu">-->
+<!--        insert into stu(sno,sname,sage) values (#{sno}, #{sname}, #{sage})-->
+<!--    </insert>-->
+    <select id="queryAllStudent" resultType="Student">
+        select * from student
+    </select>
+    <insert id="addStudent" parameterType="Student">
+        insert into student(id,name,sex,age,insitute,majo,grade,clazz) values (#{id}, #{name}, #{sex}, #{age}, #{insitute}, #{majo}, #{grade}, ${clazz})
+    </insert>
+    <delete id="deleteStudentById" parameterType="int">
+        delete from student where id = #{id}
+    </delete>
+    <update id="updateStudent" parameterType="Student">
+        update student set name = #{name}, sex = #{sex}, age = #{age}, insitute = #{insitute}, majo = #{majo}, grade = #{grade}, clazz = #{clazz} where id = #{id}
+    </update>
+</mapper>
